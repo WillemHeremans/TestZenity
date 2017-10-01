@@ -1,0 +1,11 @@
+#!/bin/sh
+echo -n "Voulez-vous voir la liste des fichiers Y/N : "
+read ouinon
+if [ "$ouinon" = "y" ] || [ "$ouinon" = "Y" ]; then
+    echo "Liste des fichiers :"
+    ls -la
+elif [ "$ouinon" = "n" ] || [ "$ouinon" = "N" ]; then
+    echo "Ok, bye! "
+else
+    echo "Il faut taper Y ou N!! Pas $ouinon"
+fi

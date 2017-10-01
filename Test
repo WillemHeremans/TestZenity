@@ -1,0 +1,11 @@
+#!/bin/sh
+
+avis=$(acpi -V)
+#deux=$(uptime)
+#trois=$(w)
+
+zenity --info --title=":-)" --width=750 --text="$avis"
+
+exit
+
+
